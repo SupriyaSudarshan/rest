@@ -1,15 +1,15 @@
-	import java.io.BufferedReader;
-	import java.io.IOException;
-	import java.io.InputStreamReader;
-	import java.net.HttpURLConnection;
-	import java.net.MalformedURLException;
-	import java.net.URL;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class RestURLCheck {
 
-		public static void main(String[] args) {
-
-		  try {
+	public static void main(String[] args) {
+		public String name;
+		try {
 
 			URL url = new URL("http://www.json-generator.com/api/json/get/bVHQuJAlbC?indent=2");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -22,7 +22,7 @@ public class RestURLCheck {
 			}
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(
-				(conn.getInputStream())));
+					(conn.getInputStream())));
 
 			String output;
 			System.out.println("Output from Server .... \n");
@@ -32,18 +32,18 @@ public class RestURLCheck {
 
 			conn.disconnect();
 
-		  } catch (MalformedURLException e) {
+		} catch (MalformedURLException e) {
 
 			e.printStackTrace();
 
-		  } catch (IOException e) {
+		} catch (IOException e) {
 
 			e.printStackTrace();
-
-		  }
 
 		}
 
 	}
-	
-	
+
+}
+
+
