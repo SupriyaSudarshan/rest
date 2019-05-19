@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class RestURLCheck {
+<<<<<<< HEAD
 
 
 	public static void main(String[] args) {
@@ -13,6 +14,11 @@ public class RestURLCheck {
 		try {
                                                 string LName;
 
+//main method
+		public static void main(String[] args) {
+
+		  try {
+//to test git 
 			URL url = new URL("http://www.json-generator.com/api/json/get/bVHQuJAlbC?indent=2");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
