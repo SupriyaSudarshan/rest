@@ -7,9 +7,11 @@ import java.net.URL;
 
 public class RestURLCheck {
 
+
 	public static void main(String[] args) {
 		public String name;
 		try {
+                                                string LName;
 
 			URL url = new URL("http://www.json-generator.com/api/json/get/bVHQuJAlbC?indent=2");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
