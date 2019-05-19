@@ -6,11 +6,11 @@
 	import java.net.URL;
 
 public class RestURLCheck {
-
+//main method
 		public static void main(String[] args) {
 
 		  try {
-
+//to test git 
 			URL url = new URL("http://www.json-generator.com/api/json/get/bVHQuJAlbC?indent=2");
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
